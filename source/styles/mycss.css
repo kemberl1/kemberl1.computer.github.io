@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body{
+  font-family: Oswald, serif;
+  background: linear-gradient(0deg, #f96767 0%, #ebbcbc 100%);
+}
+
+p{
+  color: black;
+}
+
+.nav-link{
+  color: white;
+}
+.navbar-nav .nav-link.active{
+  color: rgb(177, 171, 171);
+}
+.navbar-brand img{
+width: 40px;
+}
+.navbar-toggler{
+  background-color: rgb(177, 171, 171);;
+}
+
+.side-bar{
+  font-size: 19px;
+  color: #c65454;
+  background: #ffc2c2
+}
+
+.card{
+  background: linear-gradient(150deg, #f96767 0%, #ebbcbc 100%);  
+}
+
+.card a{
+  text-decoration: none;
+  color: rgba(69, 69, 69, 0.97);
+}
+
+footer,
+.btn-outline-primary{
+  margin-top: 2em;
+  background: linear-gradient(100deg, #f96767 0%, #ebbcbc 100%);    
+}
+
+.slide-text,
+.footer-text{
+  color: black;
+  margin: auto auto;
+  font-size: 20px;
+}
+
+.media-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-anim{
+  animation: myAnim 3s ease 1s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+
+
+@media(max-width: 755px){
+.carousel-indicators{
+  display: none;
+}  
+}
